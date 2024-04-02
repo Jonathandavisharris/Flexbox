@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(39, 39, 39);
+    background-color: #b1afaf;
+    color: #140e0e;
+}
+.logo, .nav {
+    padding: 10px;
+    background-color: #5f9667;
+    border: 2px solid rgb(39, 39, 39);
+}
+.box-1 {
+    background: #b1afaf;
+}
+.box-2 {
+    background: #b1afaf;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-3 {
+    background: #b1afaf;
+}
+.box-1 {
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-2 {
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-3 {
+    height: 400px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mini-box {
+    background: #5f9667;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(39, 39, 39);
+}
+.mini-box:nth-child(1) {
+    height: 50px;
+}
+.mini-box:nth-child(2) {
+    height: 100px;    
+}
+.mini-box:nth-child(3) {
+    height: 150px;
+}
+.footer {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(39, 39, 39);
+    background-color: #b1afaf;
+    color: #140e0e;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 801px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-2 {
+        width: 100%;
+    }
+    .box-1, .box-3 {
+        flex-grow: 1;
+        flex-basis: 0;
+        height: 300px;
+    }
+    .box-2 {
+        /* spejler rækkefølgen */
+        flex-direction: row-reverse;
+        order: 3;
+    }
+    .nav {
+        width: 55%;
+    }
+}
+
